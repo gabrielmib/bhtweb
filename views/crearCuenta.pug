@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include partials/header
+    body
+        
+        h1  Crea tu cuenta
+
+        if locals.mensajes
+        
+            each categoria in Object.keys(locals.mensajes)
+                each error in mensajes[categoria]
+                    alerta(class=`${categoria}`)
+                        p= error        
+
+            form(action="/crear-cuenta", method="post")
+                
+                label(for="email")  Correo
+                input(type="email", name="email", placeholder="Tu correo" value= email)
+                br
+                label(for="password")  Contraseña
+                input(type="password", name="password", placeholder="Tu contraseña" value= password)
+                br
+                input.boton(type="submit", value="Crear Cuenta")
+                br
+                a(href="/iniciar-sesion") Volver a iniciar sesión        
+        
+        

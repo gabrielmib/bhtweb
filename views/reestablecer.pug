@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include partials/header
+    body
+        
+            h1= nombrePagina
+
+            if locals.mensajes
+                
+                    each categoria in Object.keys(locals.mensajes)
+                        each error in mensajes[categoria]
+                            alerta(class=`${categoria}`)
+                                p= error   
+                                
+            p Ingresa tu dirección de correo para restablecer tu contraseña
+            form(action="/reestablecer", method="post")
+                
+                    label(for="email")  E-mail
+                    input(type="email", name="email", placeholder="Tu correo" value= email)
+                    br
+                    input.boton(type="submit", value="Restablecer Contraseña")
+                    br
+                    a(href="/iniciar-sesion") Ya lo recordé, volver al ingreso
+                
+                
