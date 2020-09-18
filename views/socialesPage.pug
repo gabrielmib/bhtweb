@@ -1,0 +1,117 @@
+doctype html
+html
+	head
+		title W3.CSS Template
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Raleway')
+		style.
+			body,
+			h1,
+			h2 {
+			font-family: "Raleway", sans-serif
+			}
+			body,
+			html {
+			height: 100%
+			}
+			p {
+			line-height: 2
+			}
+			.bgimg,
+			.bgimg2 {
+			min-height: 100%;
+			background-position: center;
+			background-size: cover;
+			}
+			.bgimg {
+			background-image: url("/w3images/morenodorado.jpg")
+			}
+			.bgimg2 {
+			background-image: url("/w3images/morenada2.jpg")
+			}
+	body
+		// Header / Home
+		header#home.w3-display-container.w3-wide.bgimg
+			.w3-display-middle.w3-text-white.w3-center
+				h1.w3-jumbo GRAN PODER 2021
+				h2 Fraternidad Morenada Central
+				h2
+					b 17.07.2021
+		// Navbar (sticky bottom)
+		.w3-bottom.w3-hide-small
+			.w3-bar.w3-white.w3-center.w3-padding.w3-opacity-min.w3-hover-opacity-off
+				a.w3-bar-item.w3-button(href='#home', style='width:25%') Gran Poder 2021
+				a.w3-bar-item.w3-button(href='#us', style='width:25%') Invitacion
+				a.w3-bar-item.w3-button(href='#wedding', style='width:25%') Recepcion Social
+				a.w3-bar-item.w3-button.w3-hover-black(href='#rsvp', style='width:25%') RSVP
+		// About / Jane And John
+		#us.w3-container.w3-padding-64.w3-yellow.w3-grayscale-min
+			.w3-content
+				h1.w3-center.w3-text-blue
+					b INVITACION
+				img.w3-round(src='/w3images/jesusgp3.jpg', style='width:100%;margin:32px 0')
+				p
+					i
+						| You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+						| occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						| laboris nisi ut aliquip ex ea commodo consequat.
+				br
+				p.w3-center
+					a.w3-button.w3-blue.w3-round.w3-padding-large.w3-large(href='#wedding') Recepcion Social
+		// Background photo
+		.w3-display-container.bgimg2
+			.w3-display-middle.w3-text-white.w3-center
+				h1.w3-jumbo Estas invitado
+				br
+				h2 Eres parte de nuestra familia
+		// Wedding information
+		#wedding.w3-container.w3-padding-64.w3-red.w3-grayscale-min.w3-center
+			.w3-content
+				h1.w3-text-white
+					b RECEPCION SOCIAL
+				
+				
+
+				img.w3-round-large(src='/w3images/lucero.jpeg', style='width:100%;margin:64px 0')
+				.w3-row
+					h4.w3-text-white
+						b Los pasantes fraternos 2021 Señor Oscar Sumi y Paola Ratatouille tienen el agrado de invitarles a la ceremonia religiosa y recepcion social en honor al Señor Jesus del Gran Poder You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+					.w3-half.w3-text-white
+						h2 Cuando
+						p Misa de Salud  - 2:00pm
+						p Recepcion Social - 5:00pm
+					.w3-half.w3-text-white
+						h2 Donde
+						p Santuario del Señor Jesus del Gran Poder, calle Antonio Gallardo
+						p Salón de Fiestas EL TUTUMAZO 2, Calle Murillo - Zona Central
+				
+				
+		// RSVP section
+		#rsvp.w3-container.w3-padding-64.w3-pale-red.w3-center.w3-wide
+			h1 CONTAMOS CON TU PRESENCIA
+			p.w3-large Confirma tu asistencia
+			p.w3-xlarge
+				button.w3-button.w3-round.w3-red.w3-opacity.w3-hover-opacity-off(onclick="document.getElementById('id01').style.display='block'", style='padding:8px 60px') CONFIRMAR
+		// RSVP modal
+		#id01.w3-modal
+			.w3-modal-content.w3-card-4.w3-animate-zoom(style='padding:32px;max-width:600px')
+				.w3-container.w3-white.w3-center
+					h1.w3-wide ¿Estarás presente?
+					p Realmente esperamos que estés con nosotros
+					form
+						input.w3-input.w3-border(type='text', placeholder='Nombres', name='name')
+					p
+						i Atentamente, Pasantes 2021
+					.w3-row
+						.w3-half
+							button.w3-button.w3-block.w3-green(onclick="document.getElementById('id01').style.display='none'", type='button') Confirmar
+						.w3-half
+							button.w3-button.w3-block.w3-red(onclick="document.getElementById('id01').style.display='none'", type='button') No podré ir
+		// Footer
+		footer.w3-center.w3-gray.w3-padding-16
+			p
+				| Powered by 
+				a.w3-hover-text-green(href='https://www.w3schools.com/w3css/default.asp', title='W3.CSS', target='_blank') w3.css
+		.w3-hide-small(style='margin-bottom:32px')  

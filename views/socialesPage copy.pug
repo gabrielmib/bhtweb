@@ -1,0 +1,289 @@
+doctype html
+html
+	head
+		title W3.CSS Template
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
+		link(rel='stylesheet', href='https://www.w3schools.com/lib/w3-theme-black.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+	body#myPage
+		// Sidebar on click
+		nav#mySidebar.w3-sidebar.w3-bar-block.w3-white.w3-card.w3-animate-left.w3-xxlarge(style='display:none;z-index:2')
+			a.w3-bar-item.w3-button.w3-display-topright.w3-text-teal(href='javascript:void(0)', onclick='w3_close()')
+				| Close
+				i.fa.fa-remove
+			a.w3-bar-item.w3-button(href='#') Link 1
+			a.w3-bar-item.w3-button(href='#') Link 2
+			a.w3-bar-item.w3-button(href='#') Link 3
+			a.w3-bar-item.w3-button(href='#') Link 4
+			a.w3-bar-item.w3-button(href='#') Link 5
+		// Navbar
+		.w3-top
+			.w3-bar.w3-theme-d2.w3-left-align
+				a.w3-bar-item.w3-button.w3-hide-medium.w3-hide-large.w3-right.w3-hover-white.w3-theme-d2(href='javascript:void(0);', onclick='openNav()')
+					i.fa.fa-bars
+				a.w3-bar-item.w3-button.w3-teal(href='#')
+					i.fa.fa-home.w3-margin-right
+					| Logo
+				a.w3-bar-item.w3-button.w3-hide-small.w3-hover-white(href='#team') Invitacion
+				a.w3-bar-item.w3-button.w3-hide-small.w3-hover-white(href='#work') Recepcion
+				a.w3-bar-item.w3-button.w3-hide-small.w3-hover-white(href='#pricing') Grupos Invitados
+				a.w3-bar-item.w3-button.w3-hide-small.w3-hover-white(href='#contact') Contactos
+				.w3-dropdown-hover.w3-hide-small
+					button.w3-button(title='Notifications')
+						| Dropdown 
+						i.fa.fa-caret-down
+					.w3-dropdown-content.w3-card-4.w3-bar-block
+						a.w3-bar-item.w3-button(href='#') Link
+						a.w3-bar-item.w3-button(href='#') Link
+						a.w3-bar-item.w3-button(href='#') Link
+				a.w3-bar-item.w3-button.w3-hide-small.w3-right.w3-hover-teal(href='#', title='Search')
+					i.fa.fa-search
+			// Navbar on small screens
+			#navDemo.w3-bar-block.w3-theme-d2.w3-hide.w3-hide-large.w3-hide-medium
+				a.w3-bar-item.w3-button(href='#team') Invitacion
+				a.w3-bar-item.w3-button(href='#work') Recepcion
+				a.w3-bar-item.w3-button(href='#pricing') Grupos Invitados
+				a.w3-bar-item.w3-button(href='#contact') Contactos
+				a.w3-bar-item.w3-button(href='#') Search
+		// Image Header
+		.w3-display-container.w3-animate-opacity
+			img(src='/w3images/sailboat.jpg', alt='boat', style='width:100%;min-height:350px;max-height:600px;')
+            
+			.w3-container.w3-display-bottomleft.w3-margin-bottom
+				button.w3-button.w3-xlarge.w3-theme.w3-hover-teal(onclick="document.getElementById('id01').style.display='block'", title='Go To W3.CSS') LEARN W3.CSS
+		// Modal
+		#id01.w3-modal
+			.w3-modal-content.w3-card-4.w3-animate-top
+				header.w3-container.w3-teal.w3-display-container
+					span.w3-button.w3-teal.w3-display-topright(onclick="document.getElementById('id01').style.display='none'")
+						i.fa.fa-remove
+					h4 Oh snap! We just showed you a modal..
+					h5
+						| Because we can 
+						i.fa.fa-smile-o
+				.w3-container
+					p Cool huh? Ok, enough teasing around..
+					p
+						| Go to our 
+						a.w3-text-teal(href='/w3css/default.asp') W3.CSS Tutorial
+						|  to learn more!
+				footer.w3-container.w3-teal
+					p Modal footer
+		// Team Container
+		#team.w3-container.w3-padding-64.w3-center
+			h1 INVITACION 2020
+			h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			.w3-row
+				br
+				.w3-quarter
+					img.w3-circle.w3-hover-opacity(src='/w3images/avatar.jpg', alt='Boss', style='width:45%')
+					h3 Johnny Walker
+					p Web Designer
+				.w3-quarter
+					img.w3-circle.w3-hover-opacity(src='/w3images/avatar.jpg', alt='Boss', style='width:45%')
+					h3 Rebecca Flex
+					p Support
+				.w3-quarter
+					img.w3-circle.w3-hover-opacity(src='/w3images/avatar.jpg', alt='Boss', style='width:45%')
+					h3 Jan Ringo
+					p Boss man
+				.w3-quarter
+					img.w3-circle.w3-hover-opacity(src='/w3images/avatar.jpg', alt='Boss', style='width:45%')
+					h3 Kai Ringo
+					p Fixer
+		// Work Row
+		#work.w3-row-padding.w3-padding-64.w3-theme-l1
+			.w3-quarter
+				h2 Recepcion Social
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			.w3-quarter
+				.w3-card.w3-white
+					img(src='/w3images/snow.jpg', alt='Snow', style='width:100%')
+					.w3-container
+						h3 Dia 1
+						h4 Trade
+						p Blablabla
+						p Blablabla
+						p Blablabla
+						p Blablabla
+			.w3-quarter
+				.w3-card.w3-white
+					img(src='/w3images/lights.jpg', alt='Lights', style='width:100%')
+					.w3-container
+						h3 Dia 2
+						h4 Trade
+						p Blablabla
+						p Blablabla
+						p Blablabla
+						p Blablabla
+			.w3-quarter
+				.w3-card.w3-white
+					img(src='/w3images/mountains.jpg', alt='Mountains', style='width:100%')
+					.w3-container
+						h3 Dia 3
+						h4 Trade
+						p Blablabla
+						p Blablabla
+						p Blablabla
+						p Blablabla
+		// Container
+		.w3-container(style='position:relative')
+			a.w3-button.w3-xlarge.w3-circle.w3-teal(onclick='w3_open()', style='position:absolute;top:-28px;right:24px') +
+		// Pricing Row
+		#pricing.w3-row-padding.w3-center.w3-padding-64
+			h2 PRICING
+			p Choose a pricing plan that fits your needs.
+			br
+			.w3-third.w3-margin-bottom
+				ul.w3-ul.w3-border.w3-hover-shadow
+					li.w3-theme
+						p.w3-xlarge Basic
+					li.w3-padding-16
+						b 10GB
+						|  Storage
+					li.w3-padding-16
+						b 10
+						|  Emails
+					li.w3-padding-16
+						b 10
+						|  Domains
+					li.w3-padding-16
+						b Endless
+						|  Support
+					li.w3-padding-16
+						h2.w3-wide
+							i.fa.fa-usd
+							|  10
+						span.w3-opacity per month
+					li.w3-theme-l5.w3-padding-24
+						button.w3-button.w3-teal.w3-padding-large
+							i.fa.fa-check
+							|  Sign Up
+			.w3-third.w3-margin-bottom
+				ul.w3-ul.w3-border.w3-hover-shadow
+					li.w3-theme-l2
+						p.w3-xlarge Pro
+					li.w3-padding-16
+						b 25GB
+						|  Storage
+					li.w3-padding-16
+						b 25
+						|  Emails
+					li.w3-padding-16
+						b 25
+						|  Domains
+					li.w3-padding-16
+						b Endless
+						|  Support
+					li.w3-padding-16
+						h2.w3-wide
+							i.fa.fa-usd
+							|  25
+						span.w3-opacity per month
+					li.w3-theme-l5.w3-padding-24
+						button.w3-button.w3-teal.w3-padding-large
+							i.fa.fa-check
+							|  Sign Up
+			.w3-third.w3-margin-bottom
+				ul.w3-ul.w3-border.w3-hover-shadow
+					li.w3-theme
+						p.w3-xlarge Premium
+					li.w3-padding-16
+						b 50GB
+						|  Storage
+					li.w3-padding-16
+						b 50
+						|  Emails
+					li.w3-padding-16
+						b 50
+						|  Domains
+					li.w3-padding-16
+						b Endless
+						|  Support
+					li.w3-padding-16
+						h2.w3-wide
+							i.fa.fa-usd
+							|  50
+						span.w3-opacity per month
+					li.w3-theme-l5.w3-padding-24
+						button.w3-button.w3-teal.w3-padding-large
+							i.fa.fa-check
+							|  Sign Up
+		// Contact Container
+		#contact.w3-container.w3-padding-64.w3-theme-l5
+			.w3-row
+				.w3-col.m5
+					.w3-padding-16
+						span.w3-xlarge.w3-border-teal.w3-bottombar Contact Us
+					h3 Address
+					p Swing by for a cup of coffee, or whatever.
+					p
+						i.fa.fa-map-marker.w3-text-teal.w3-xlarge
+						|   Chicago, US
+					p
+						i.fa.fa-phone.w3-text-teal.w3-xlarge
+						|   +00 1515151515
+					p
+						i.fa.fa-envelope-o.w3-text-teal.w3-xlarge
+						|   test@test.com
+				.w3-col.m7
+					form.w3-container.w3-card-4.w3-padding-16.w3-white(action='/action_page.php', target='_blank')
+						.w3-section
+							label Name
+							input.w3-input(type='text', name='Name', required='')
+						.w3-section
+							label Email
+							input.w3-input(type='text', name='Email', required='')
+						.w3-section
+							label Message
+							input.w3-input(type='text', name='Message', required='')
+						input.w3-check(type='checkbox', checked='', name='Like')
+						label I Like it!
+						button.w3-button.w3-right.w3-theme(type='submit') Send
+		// Image of location/map
+		img.w3-image.w3-greyscale-min(src='/w3images/map.jpg', style='width:100%;')
+		// Footer
+		footer.w3-container.w3-padding-32.w3-theme-d1.w3-center
+			h4 Follow Us
+			a.w3-button.w3-large.w3-teal(href='javascript:void(0)', title='Facebook')
+				i.fa.fa-facebook
+			a.w3-button.w3-large.w3-teal(href='javascript:void(0)', title='Twitter')
+				i.fa.fa-twitter
+			a.w3-button.w3-large.w3-teal(href='javascript:void(0)', title='Google +')
+				i.fa.fa-google-plus
+			a.w3-button.w3-large.w3-teal(href='javascript:void(0)', title='Google +')
+				i.fa.fa-instagram
+			a.w3-button.w3-large.w3-teal.w3-hide-small(href='javascript:void(0)', title='Linkedin')
+				i.fa.fa-linkedin
+			p
+				| Powered by 
+				a(href='https://www.w3schools.com/w3css/default.asp', target='_blank') w3.css
+			.w3-tooltip.w3-right(style='position:relative;bottom:100px;z-index:1;')
+				span.w3-text.w3-padding.w3-teal.w3-hide-small Go To Top
+				a.w3-button.w3-theme(href='#myPage')
+					span.w3-xlarge
+						i.fa.fa-chevron-circle-up
+		script.
+			// Script for side navigation
+			function w3_open() {
+			var x = document.getElementById("mySidebar");
+			x.style.width = "300px";
+			x.style.paddingTop = "10%";
+			x.style.display = "block";
+			}
+			// Close side navigation
+			function w3_close() {
+			document.getElementById("mySidebar").style.display = "none";
+			}
+			// Used to toggle the menu on smaller screens when clicking on the menu button
+			function openNav() {
+			var x = document.getElementById("navDemo");
+			if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+			} else {
+			x.className = x.className.replace(" w3-show", "");
+			}
+			}

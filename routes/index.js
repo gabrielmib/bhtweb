@@ -19,6 +19,16 @@ module.exports = function() {
         // authController.usuarioAutenticado
     );
 
+    //pagina boda
+    router.get('/boda',
+        homeController.paginaBoda
+    );
+
+    //pagina eventos sociales
+    router.get('/sociales',
+        homeController.paginaSociales
+    );
+
     //iniciar sesion
     router.get('/iniciar-sesion', usuariosController.formIniciarSesion);
     router.post('/iniciar-sesion', authController.autenticarUsuario);
