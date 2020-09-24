@@ -36,19 +36,19 @@ html
 		// Navbar (sit on top)
 		.w3-top
 			#myNavbar.w3-bar.w3-white.w3-card
-				a.w3-bar-item.w3-button.w3-wide(href='#home') BHT
+				a.w3-bar-item.w3-button.w3-wide(href='#home') Black Horse Technologies
 				// Right-sided navbar links
 				.w3-right.w3-hide-small
 					a.w3-bar-item.w3-button(href='#about') SOBRE  NOSOTROS
 					a.w3-bar-item.w3-button(href='#team')
 						i.fa.fa-user
 						|  NUESTRO EQUIPO
-					a.w3-bar-item.w3-button(href='#work')
-						i.fa.fa-th
-						|  CATÁLOGO
-					a.w3-bar-item.w3-button(href='#pricing')
-						i.fa.fa-usd
-						|  PLANES
+					//- a.w3-bar-item.w3-button(href='#work')
+					//- 	i.fa.fa-th
+					//- 	|  CATÁLOGO
+					//- a.w3-bar-item.w3-button(href='#pricing')
+					//- 	i.fa.fa-usd
+					//- 	|  PLANES
 					a.w3-bar-item.w3-button(href='#contact')
 						i.fa.fa-envelope
 						|  CONTACTO
@@ -60,8 +60,8 @@ html
 			a.w3-bar-item.w3-button.w3-large.w3-padding-16(href='javascript:void(0)', onclick='w3_close()') Cerrar ×
 			a.w3-bar-item.w3-button(href='#about', onclick='w3_close()') SOBRE NOSOTROS
 			a.w3-bar-item.w3-button(href='#team', onclick='w3_close()') NUESTRO EQUIPO
-			a.w3-bar-item.w3-button(href='#work', onclick='w3_close()') CATÁLOGO
-			a.w3-bar-item.w3-button(href='#pricing', onclick='w3_close()') PLANES
+			//- a.w3-bar-item.w3-button(href='#work', onclick='w3_close()') CATÁLOGO
+			//- a.w3-bar-item.w3-button(href='#pricing', onclick='w3_close()') PLANES
 			a.w3-bar-item.w3-button(href='#contact', onclick='w3_close()') CONTACTO
 		// Header with full-height image
 		header#home.bgimg-1.w3-display-container.w3-grayscale-min
@@ -85,6 +85,7 @@ html
 			h3.w3-center SOBRE NOSOTROS
 			p.w3-center.w3-large Somos una empresa dedicada a la terciarización de la gestión de TI para PyMes y nuevos emprendimientos
 			p.w3-center.w3-large Queremos que te dediques a tu negocio, mientras nos encargamos de digitalizar tu empresa y gestionar tus tecnologías			
+			p.w3-center.w3-large Implementaremos tecnología a la medida de tus necesidades, para que puedas alcanzar tus metas a corto plazo.
 			.w3-row-padding.w3-center(style='margin-top:64px')
 				.w3-quarter
 					i.fa.fa-desktop.w3-margin-bottom.w3-jumbo.w3-center
@@ -115,10 +116,10 @@ html
 						| Cuenta con nosotros para gestionar las tecnologías de tu empresa y tus nuevos proyectos
 						br
 						| No te preocupes por la parte técnica,  concentra tus esfuerzos en lo que realmente importa, tu negocio.
-					p
-						a.w3-button.w3-black(href='#work')
-							i.fa.fa-th  
-							|  Elige un diseño
+					//- p
+					//- 	a.w3-button.w3-black(href='#work')
+					//- 		i.fa.fa-th  
+					//- 		|  Elige un diseño
 				.w3-col.m6
 					img.w3-image.w3-round-large(src='/w3images/phone_buildings.jpg', alt='Buildings', width='700', height='394')
 		// Team Section
@@ -131,226 +132,223 @@ html
 						img(src='/w3images/team2.jpg', alt='John', style='width:100%')
 						.w3-container
 							h3 Nelson Camacho Bellot
-							p.w3-opacity Asesor en Tecnologías Web
+							p.w3-opacity Asesor en Tecnologías Web y RRSS
 							p
-								| Especialista en telecomunicaciones, gestión de contenidos web empresariales y redes sociales. Amplia experiencia en gestión e implementación de infraestructura, redes de comunicación y centros de datos para empresas públicas y privadas. 
+								| Soy especialista en telecomunicaciones, gestión de contenidos para web  y redes sociales. Trabajé en la gestión e implementación de infraestructura, redes de comunicación y centros de datos para empresas públicas y privadas. 
 							p
 								a(href="https://api.whatsapp.com/send?phone=59176559340&text=Saludos%20BHT")
 									button.w3-button.w3-light-grey.w3-block
 										i.fa.fa-whatsapp
-										|  Contactar
+										|  Hablemos
 				.w3-col.l3.m6.w3-margin-bottom
 					.w3-card
 						img(src='/w3images/team1.jpg', alt='Jane', style='width:100%')
 						.w3-container
 							h3 Gabriel Illanes Burgoa
-							p.w3-opacity Asesor en Tecnologías Dev
+							p.w3-opacity Asesor en Tecnologías Proyectos de Software
 							p
-								| Especialista en desarrollo y control de calidad de software. Amplia experiencia en desarrollo e implementación de sistemas informáticos para empresas gubernamentales en diferentes tecnologías.
+								| Soy especialista en desarrollo y control de calidad de software. Trabajé en equipos de desarrollo e implementación de sistemas informáticos para empresas gubernamentales en diferentes tecnologías y dispositivos de control.
 							p
 								a(href="https://api.whatsapp.com/send?phone=59169950360&text=Saludos%20BHT")
 									button.w3-button.w3-light-grey.w3-block
 										i.fa.fa-whatsapp
-										|  Contactar
-				.w3-col.l3.m6.w3-margin-bottom
-					.w3-card
-						img(src='/w3images/team3.jpg', alt='Mike', style='width:100%')
-						.w3-container
-							h3 Mike Ross
-							p.w3-opacity Web Designer
-							p
-								| Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-							p
-								button.w3-button.w3-light-grey.w3-block
-									i.fa.fa-envelope
-									|  Contact
-				.w3-col.l3.m6.w3-margin-bottom
-					.w3-card
-						img(src='/w3images/team4.jpg', alt='Dan', style='width:100%')
-						.w3-container
-							h3 Dan Star
-							p.w3-opacity Designer
-							p
-								| Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-							p
-								button.w3-button.w3-light-grey.w3-block
-									i.fa.fa-envelope
-									|  Contact
-		// Promo Section "Statistics"
-		.w3-container.w3-row.w3-center.w3-dark-grey.w3-padding-64
-			.w3-quarter
-				span.w3-xxlarge 14+
-				br
-				| Partners
-			.w3-quarter
-				span.w3-xxlarge 55+
-				br
-				| Projects Done
-			.w3-quarter
-				span.w3-xxlarge 89+
-				br
-				| Happy Clients
-			.w3-quarter
-				span.w3-xxlarge 150+
-				br
-				| Meetings
-		// Work Section
-		#work.w3-container(style='padding:128px 16px')
-			h3.w3-center CATÁLOGO WEB
-			p.w3-center.w3-large Escoge un modelo para la web de tu empresa
-			.w3-row-padding(style='margin-top:64px')
-				.w3-col.l3.m6
-					img.w3-hover-opacity(src='/w3images/tech_mic.jpg', style='width:100%', onclick='onClick(this)', alt='A microphone')
-				.w3-col.l3.m6
-					img.w3-hover-opacity(src='/w3images/tech_phone.jpg', style='width:100%', onclick='onClick(this)', alt='A phone')
-				.w3-col.l3.m6
-					img.w3-hover-opacity(src='/w3images/tech_drone.jpg', style='width:100%', onclick='onClick(this)', alt='A drone')
-				.w3-col.l3.m6
-					img.w3-hover-opacity(src='/w3images/tech_sound.jpg', style='width:100%', onclick='onClick(this)', alt='Soundbox')
-			.w3-row-padding.w3-section
-				.w3-col.l3.m6
-					img.w3-hover-opacity(src='/w3images/tech_tablet.jpg', style='width:100%', onclick='onClick(this)', alt='A tablet')
-				.w3-col.l3.m6
-					img.w3-hover-opacity(src='/w3images/tech_camera.jpg', style='width:100%', onclick='onClick(this)', alt='A camera')
-				.w3-col.l3.m6
-					img.w3-hover-opacity(src='/w3images/tech_typewriter.jpg', style='width:100%', onclick='onClick(this)', alt='A typewriter')
-				.w3-col.l3.m6
-					img.w3-hover-opacity(src='/w3images/tech_tableturner.jpg', style='width:100%', onclick='onClick(this)', alt='A tableturner')
-		// Modal for full size images on click
-		#modal01.w3-modal.w3-black(onclick="this.style.display='none'")
-			span.w3-button.w3-xxlarge.w3-black.w3-padding-large.w3-display-topright(title='Close Modal Image') ×
-			.w3-modal-content.w3-animate-zoom.w3-center.w3-transparent.w3-padding-64
-				img#img01.w3-image
-				p#caption.w3-opacity.w3-large
-		// Skills Section
-		.w3-container.w3-light-grey.w3-padding-64
-			.w3-row-padding
-				.w3-col.m6
-					h3 Estas son nuestras habilidades.
-					p
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						br
-						|  tempor incididunt ut labore et dolore.
-					p
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						br
-						|  tempor incididunt ut labore et dolore.
-				.w3-col.m6
-					p.w3-wide
-						i.fa.fa-desktop.w3-margin-right
-						| Diseño Web y Gestión de Redes Sociales
-					.w3-grey
-						.w3-container.w3-dark-grey.w3-center(style='width:90%') 90%
-					p.w3-wide
-						i.fa.fa-desktop.w3-margin-right
-						| Desarrollo de Software
-					.w3-grey
-						.w3-container.w3-dark-grey.w3-center(style='width:85%') 85%
-					p.w3-wide
-						i.fa.fa-photo.w3-margin-right
-						| Implementación de TI
-					.w3-grey
-						.w3-container.w3-dark-grey.w3-center(style='width:75%') 75%
-		// Pricing Section
-		#pricing.w3-container.w3-center.w3-dark-grey(style='padding:128px 16px')
-			h3 PRECIOS
-			p.w3-large Choose a pricing plan that fits your needs.
-			.w3-row-padding(style='margin-top:64px')
-				.w3-third.w3-section
-					ul.w3-ul.w3-white.w3-hover-shadow
-						li.w3-black.w3-xlarge.w3-padding-32 Basic
-						li.w3-padding-16
-							b 10GB
-							|  Storage
-						li.w3-padding-16
-							b 10
-							|  Emails
-						li.w3-padding-16
-							b 10
-							|  Domains
-						li.w3-padding-16
-							b Endless
-							|  Support
-						li.w3-padding-16
-							h2.w3-wide $ 10
-							span.w3-opacity per month
-						li.w3-light-grey.w3-padding-24
-							button.w3-button.w3-black.w3-padding-large Sign Up
-				.w3-third
-					ul.w3-ul.w3-white.w3-hover-shadow
-						li.w3-red.w3-xlarge.w3-padding-48 Pro
-						li.w3-padding-16
-							b 25GB
-							|  Storage
-						li.w3-padding-16
-							b 25
-							|  Emails
-						li.w3-padding-16
-							b 25
-							|  Domains
-						li.w3-padding-16
-							b Endless
-							|  Support
-						li.w3-padding-16
-							h2.w3-wide $ 25
-							span.w3-opacity per month
-						li.w3-light-grey.w3-padding-24
-							button.w3-button.w3-black.w3-padding-large Sign Up
-				.w3-third.w3-section
-					ul.w3-ul.w3-white.w3-hover-shadow
-						li.w3-black.w3-xlarge.w3-padding-32 Premium
-						li.w3-padding-16
-							b 50GB
-							|  Storage
-						li.w3-padding-16
-							b 50
-							|  Emails
-						li.w3-padding-16
-							b 50
-							|  Domains
-						li.w3-padding-16
-							b Endless
-							|  Support
-						li.w3-padding-16
-							h2.w3-wide $ 50
-							span.w3-opacity per month
-						li.w3-light-grey.w3-padding-24
-							button.w3-button.w3-black.w3-padding-large Sign Up
+										|  Hablemos
+				//- .w3-col.l3.m6.w3-margin-bottom
+				//- 	.w3-card
+				//- 		img(src='/w3images/team3.jpg', alt='Mike', style='width:100%')
+				//- 		.w3-container
+				//- 			h3 Mike Ross
+				//- 			p.w3-opacity Web Designer
+				//- 			p
+				//- 				| Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+				//- 			p
+				//- 				button.w3-button.w3-light-grey.w3-block
+				//- 					i.fa.fa-envelope
+				//- 					|  Contact
+				//- .w3-col.l3.m6.w3-margin-bottom
+				//- 	.w3-card
+				//- 		img(src='/w3images/team4.jpg', alt='Dan', style='width:100%')
+				//- 		.w3-container
+				//- 			h3 Trabajemos juntos
+				//- 			p.w3-opacity Buscamos apasionados por la tecnología
+				//- 			p
+				//- 				| Cuéntanos sobre ti, tus habilidades, tus proyectos y metas. Estamos seguros de que podemos trabajar juntos.
+				//- 			p
+				//- 				button.w3-button.w3-light-grey.w3-block
+				//- 					i.fa.fa-envelope
+				//- 					|  Mandar CV
+		//- // Promo Section "Statistics"
+		//- .w3-container.w3-row.w3-center.w3-dark-grey.w3-padding-64
+		//- 	.w3-quarter
+		//- 		span.w3-xxlarge 14+
+		//- 		br
+		//- 		| Partners
+		//- 	.w3-quarter
+		//- 		span.w3-xxlarge 55+
+		//- 		br
+		//- 		| Projects Done
+		//- 	.w3-quarter
+		//- 		span.w3-xxlarge 89+
+		//- 		br
+		//- 		| Happy Clients
+		//- 	.w3-quarter
+		//- 		span.w3-xxlarge 150+
+		//- 		br
+		//- 		| Meetings
+		//- // Work Section
+		//- #work.w3-container(style='padding:128px 16px')
+		//- 	h3.w3-center CATÁLOGO WEB
+		//- 	p.w3-center.w3-large Escoge un modelo para la web de tu empresa
+		//- 	.w3-row-padding(style='margin-top:64px')
+		//- 		.w3-col.l3.m6
+		//- 			img.w3-hover-opacity(src='/w3images/tech_mic.jpg', style='width:100%', onclick='onClick(this)', alt='A microphone')
+		//- 		.w3-col.l3.m6
+		//- 			img.w3-hover-opacity(src='/w3images/tech_phone.jpg', style='width:100%', onclick='onClick(this)', alt='A phone')
+		//- 		.w3-col.l3.m6
+		//- 			img.w3-hover-opacity(src='/w3images/tech_drone.jpg', style='width:100%', onclick='onClick(this)', alt='A drone')
+		//- 		.w3-col.l3.m6
+		//- 			img.w3-hover-opacity(src='/w3images/tech_sound.jpg', style='width:100%', onclick='onClick(this)', alt='Soundbox')
+		//- 	.w3-row-padding.w3-section
+		//- 		.w3-col.l3.m6
+		//- 			img.w3-hover-opacity(src='/w3images/tech_tablet.jpg', style='width:100%', onclick='onClick(this)', alt='A tablet')
+		//- 		.w3-col.l3.m6
+		//- 			img.w3-hover-opacity(src='/w3images/tech_camera.jpg', style='width:100%', onclick='onClick(this)', alt='A camera')
+		//- 		.w3-col.l3.m6
+		//- 			img.w3-hover-opacity(src='/w3images/tech_typewriter.jpg', style='width:100%', onclick='onClick(this)', alt='A typewriter')
+		//- 		.w3-col.l3.m6
+		//- 			img.w3-hover-opacity(src='/w3images/tech_tableturner.jpg', style='width:100%', onclick='onClick(this)', alt='A tableturner')
+		//- // Modal for full size images on click
+		//- #modal01.w3-modal.w3-black(onclick="this.style.display='none'")
+		//- 	span.w3-button.w3-xxlarge.w3-black.w3-padding-large.w3-display-topright(title='Close Modal Image') ×
+		//- 	.w3-modal-content.w3-animate-zoom.w3-center.w3-transparent.w3-padding-64
+		//- 		img#img01.w3-image
+		//- 		p#caption.w3-opacity.w3-large
+		//- // Skills Section
+		//- .w3-container.w3-light-grey.w3-padding-64
+		//- 	.w3-row-padding
+		//- 		.w3-col.m6
+		//- 			h3 Estas son nuestras habilidades.
+		//- 			p
+		//- 				| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+		//- 				br
+		//- 				|  tempor incididunt ut labore et dolore.
+		//- 			p
+		//- 				| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+		//- 				br
+		//- 				|  tempor incididunt ut labore et dolore.
+		//- 		.w3-col.m6
+		//- 			p.w3-wide
+		//- 				i.fa.fa-desktop.w3-margin-right
+		//- 				| Diseño Web y Gestión de Redes Sociales
+		//- 			.w3-grey
+		//- 				.w3-container.w3-dark-grey.w3-center(style='width:90%') 90%
+		//- 			p.w3-wide
+		//- 				i.fa.fa-desktop.w3-margin-right
+		//- 				| Desarrollo de Software
+		//- 			.w3-grey
+		//- 				.w3-container.w3-dark-grey.w3-center(style='width:85%') 85%
+		//- 			p.w3-wide
+		//- 				i.fa.fa-photo.w3-margin-right
+		//- 				| Implementación de TI
+		//- 			.w3-grey
+		//- 				.w3-container.w3-dark-grey.w3-center(style='width:75%') 75%
+		//- // Pricing Section
+		//- #pricing.w3-container.w3-center.w3-dark-grey(style='padding:128px 16px')
+		//- 	h3 PRECIOS
+		//- 	p.w3-large Choose a pricing plan that fits your needs.
+		//- 	.w3-row-padding(style='margin-top:64px')
+		//- 		.w3-third.w3-section
+		//- 			ul.w3-ul.w3-white.w3-hover-shadow
+		//- 				li.w3-black.w3-xlarge.w3-padding-32 Basic
+		//- 				li.w3-padding-16
+		//- 					b 10GB
+		//- 					|  Storage
+		//- 				li.w3-padding-16
+		//- 					b 10
+		//- 					|  Emails
+		//- 				li.w3-padding-16
+		//- 					b 10
+		//- 					|  Domains
+		//- 				li.w3-padding-16
+		//- 					b Endless
+		//- 					|  Support
+		//- 				li.w3-padding-16
+		//- 					h2.w3-wide $ 10
+		//- 					span.w3-opacity per month
+		//- 				li.w3-light-grey.w3-padding-24
+		//- 					button.w3-button.w3-black.w3-padding-large Sign Up
+		//- 		.w3-third
+		//- 			ul.w3-ul.w3-white.w3-hover-shadow
+		//- 				li.w3-red.w3-xlarge.w3-padding-48 Pro
+		//- 				li.w3-padding-16
+		//- 					b 25GB
+		//- 					|  Storage
+		//- 				li.w3-padding-16
+		//- 					b 25
+		//- 					|  Emails
+		//- 				li.w3-padding-16
+		//- 					b 25
+		//- 					|  Domains
+		//- 				li.w3-padding-16
+		//- 					b Endless
+		//- 					|  Support
+		//- 				li.w3-padding-16
+		//- 					h2.w3-wide $ 25
+		//- 					span.w3-opacity per month
+		//- 				li.w3-light-grey.w3-padding-24
+		//- 					button.w3-button.w3-black.w3-padding-large Sign Up
+		//- 		.w3-third.w3-section
+		//- 			ul.w3-ul.w3-white.w3-hover-shadow
+		//- 				li.w3-black.w3-xlarge.w3-padding-32 Premium
+		//- 				li.w3-padding-16
+		//- 					b 50GB
+		//- 					|  Storage
+		//- 				li.w3-padding-16
+		//- 					b 50
+		//- 					|  Emails
+		//- 				li.w3-padding-16
+		//- 					b 50
+		//- 					|  Domains
+		//- 				li.w3-padding-16
+		//- 					b Endless
+		//- 					|  Support
+		//- 				li.w3-padding-16
+		//- 					h2.w3-wide $ 50
+		//- 					span.w3-opacity per month
+		//- 				li.w3-light-grey.w3-padding-24
+		//- 					button.w3-button.w3-black.w3-padding-large Sign Up
 		// Contact Section
 		#contact.w3-container.w3-light-grey(style='padding:128px 16px')
 			h3.w3-center CONTACTO
-			p.w3-center.w3-large Lets get in touch. Send us a message:
+			p.w3-center.w3-large Mandanos un mensaje:
 			div(style='margin-top:48px')
 				p
 					i.fa.fa-map-marker.fa-fw.w3-xxlarge.w3-margin-right
-					|  Chicago, US
-				p
-					i.fa.fa-phone.fa-fw.w3-xxlarge.w3-margin-right
-					|  Phone: +00 151515
+					|  La Paz, BOLIVIA				
 				p
 					i.fa.fa-envelope.fa-fw.w3-xxlarge.w3-margin-right  
-					|  Email: mail@mail.com
+					|  Email: info@bht.com.bo
 				br
 				form(action='/action_page.php', target='_blank')
 					p
-						input.w3-input.w3-border(type='text', placeholder='Name', required='', name='Name')
+						input.w3-input.w3-border(type='text', placeholder='Nombre', required='', name='Name')
 					p
 						input.w3-input.w3-border(type='text', placeholder='Email', required='', name='Email')
 					p
-						input.w3-input.w3-border(type='text', placeholder='Subject', required='', name='Subject')
+						input.w3-input.w3-border(type='text', placeholder='Asunto', required='', name='Subject')
 					p
-						input.w3-input.w3-border(type='text', placeholder='Message', required='', name='Message')
+						input.w3-input.w3-border(type='text', placeholder='Mensaje', required='', name='Message')
 					p
 						button.w3-button.w3-black(type='submit')
 							i.fa.fa-paper-plane
-							|  ENVIAR MENSAJES
+							|  ENVIAR MENSAJE
 				// Image of location/map
 				img.w3-image.w3-greyscale(src='/w3images/map.jpg', style='width:100%;margin-top:48px')
 		// Footer
 		footer.w3-center.w3-black.w3-padding-64
 			a.w3-button.w3-light-grey(href='#home')
 				i.fa.fa-arrow-up.w3-margin-right
-				| To the top
+				| Subir
 			.w3-xlarge.w3-section
 				i.fa.fa-facebook-official.w3-hover-opacity
 				i.fa.fa-instagram.w3-hover-opacity
@@ -358,9 +356,9 @@ html
 				i.fa.fa-pinterest-p.w3-hover-opacity
 				i.fa.fa-twitter.w3-hover-opacity
 				i.fa.fa-linkedin.w3-hover-opacity
-			p
-				| Powered by 
-				a.w3-hover-text-green(href='https://www.w3schools.com/w3css/default.asp', title='W3.CSS', target='_blank') w3.css
+			//- p
+			//- 	| Powered by 
+			//- 	a.w3-hover-text-green(href='https://www.w3schools.com/w3css/default.asp', title='W3.CSS', target='_blank') w3.css
 		script.
 			// Modal Image Gallery
 			function onClick(element) {
